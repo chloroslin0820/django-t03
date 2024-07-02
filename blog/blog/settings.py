@@ -11,7 +11,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY')
-# SECRET_KEY = 'django-insecure-p@05h5wvdxrds=!fqivb_l*5g3nu$j*o_p8r@sz-be%yy8#q&6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
@@ -80,9 +79,6 @@ DATABASES = {
 }
 
 
-# DATABASES = {
-#     'default': dj_database_url.parse("postgresql://chloros:qdfw4Jqp8SYyJ88rHuuvptAttyKEOfBU@dpg-cq1otfjv2p9s73d5c3b0-a.oregon-postgres.render.com/chloros_db")
-# }
 database_url = os.environ.get('DATABASE_URL')
 DATABASES['default'] = dj_database_url.parse(database_url)
 
