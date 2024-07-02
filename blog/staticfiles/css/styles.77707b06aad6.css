@@ -1,0 +1,19 @@
+body {
+    background-color: #FAFAFA;
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+}
+
+span i:first-child {
+    color: #E9ECEF;
+}
+
+.creer-form,
+.contact-form {
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+}
