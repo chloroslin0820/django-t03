@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block contenu %}
+<form
+  action="{% url 'articles:creer' %}"
+  method="POST"
+  enctype="multipart/form-data"
+  class="creer-form"
+>
+  {% csrf_token %} {{ form.as_p }}
+  <button type="submit" class="btn btn-danger">Créer</button>
+</form>
+{% endblock %}

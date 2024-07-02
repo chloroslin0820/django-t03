@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "postgresql://chloros:qdfw4Jqp8SYyJ88rHuuvptAttyKEOfBU@dpg-cq1otfjv2p9s73d5c3b0-a/chloros_db",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "dpg-cq1otfjv2p9s73d5c3b0-a",
+            "database": "chloros_db",
+            "username": "chloros"
+        }
+    ]
+}
